@@ -10,5 +10,8 @@ def factorial(num):
         result *= x
     return result
 
-n = int(input("请输入N："))
-print("N的阶乘是%d" % factorial(n))
+print("day6_001 was called!!!")
+
+if __name__ == '__main__':
+    n = int(input("请输入N："))
+    print("N的阶乘是%d" % factorial(n))
