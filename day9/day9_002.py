@@ -2,6 +2,7 @@
 """
 __slots__魔法
 限定自定义类型的对象,只能绑定某些属性
+限定之后，对象就不能创建其他的属性了
 """
 
 class Person(object):
@@ -41,3 +42,6 @@ if __name__ == '__main__':
     person.name = '王重阳'
     person.age = 10
     person.play()
+    person.__gender__ = '1111'
+    person.__wtf = '2222'# AttributeError: 'Person' object has no attribute '__wtf'
+
